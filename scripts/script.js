@@ -9,7 +9,7 @@ function conversion() {
       res = (inputBox.value / 131.2335).toPrecision(4);
       result.innerText = inputBox.value + " Meters equals " + res + " Football Fields";
   } else {
-    res = ((inputBox.value / 0.9144).toPrecision(4) / 131.2335).toPrecision(4);
+    res = (inputBox.value / 120).toPrecision(4);
       result.innerText = inputBox.value + " Yards equals "  + res + " Football Fields";
   }
   result.style.fontSize = "24pt"

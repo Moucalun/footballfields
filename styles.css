@@ -29,6 +29,7 @@ input[type="number"] {
 }
 
 #title {
+    padding: 30 30;
     font-weight: normal;
     font-size: 32pt;
     text-align: center;
@@ -61,4 +62,10 @@ input[type="number"] {
     border-radius: 4px;
     background-color: #bbe1fa;
     color: #1b262c;
+}
+
+#footballfield {
+    width: 10%;
+    height: 10%;
+    padding: 10% 10%;
 }
