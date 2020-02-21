@@ -8,11 +8,11 @@ function conversion() {
   if (measType.value == "Meters") {
     res = (inputBox.value / 131.2335);
     ((res % 1) == 0) ? Math.trunc(res) : res.toPrecision(4);
-    result.innerText = inputBox.value + " Meters equals " + res + " Football Fields";
+    result.innerText = inputBox.value + " Meters equals " + res + "\n Football Fields";
   } else {
     res = (inputBox.value / 120);
     ((res % 1) == 0) ? Math.trunc(res) : res.toPrecision(4);
-    result.innerText = inputBox.value + " Yards equals "  + res + " Football Fields";
+    result.innerText = inputBox.value + " Yards equals "  + res + "\n Football Fields";
   }
   result.style.fontSize = "24pt"
 }
