@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nova Aba</title>
-
-        <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+        <title>Football Fields Measurements</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="footballfield.png" />
     </head>
-    <body id="body">
-        <p id="weekDay"></p>
+    <body id="body" onload="conversion()">
+        <h1 id="title">How much is this in <br /><strong>football fields measurements</strong>?</h1>
+        <div id="insides">
+            <p>
+                <!-- <img id="footballfield" src="footballfield.png" /> -->
+                <input id="inputBox" type="number" value="1.0" autofocus />
+                <select id="normalPeopleMeasurement">
+                    <option value="Meters">Meters</option>
+                    <option value="Yards">Yards</option>
+                </select>
+            </p>
+            <p id="result"></p>
+        </div>
+        <div id="flaticon">
+            Icons made by
+            <a
+                href="https://www.flaticon.com/authors/pixelmeetup"
+                title="Pixelmeetup"
+                >Pixelmeetup</a
+            >
+            from
+            <a href="https://www.flaticon.com/" title="Flaticon">
+                www.flaticon.com</a
+            >
+        </div>
         <script src="scripts/script.js"></script>
+        </div>
     </body>
 </html>
