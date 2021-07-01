@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Football Fields Measurements</title>
-        <meta description="Convert your normal human measurements into football fields!">
+        <title>4'33"</title>
+        <meta description="Descrição">
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" href="footballfield.png" />
         <!-- Icon made by Pixelmeetup (https://www.flaticon.com/authors/pixelmeetup) -->
@@ -12,20 +12,32 @@
         <link rel="image_src" href="footballfield.png" />
         <link rel="canonical" href="https://moucalun.github.io/footballfields/" />
     </head>
-    <body id="body" onload="conversion()">
-        <h1 id="title">How much is this in <strong>football fields </strong> measurements?</h1>
-        <div id="insides">
-            <p>
-                <!-- <img id="footballfield" src="footballfield.png" /> -->
-                <input id="inputBox" type="number" value="1.0" autofocus />
-                <select id="normalPeopleMeasurement">
-                    <option value="Meters">Meters</option>
-                    <option value="Yards">Yards</option>
-                </select>
-            </p>
-            <p id="result"></p>
-        </div>
-        <script src="scripts/script.js"></script>
-        </div>
+    <body id="body" >
+        <h1 id="title"><strong>4'33"</strong></h1>
+        <script src="FileSaver.js"></script>
+              <script>
+                //Recebe o input de áudio
+                navigator.mediaDevices.getUserMedia({ audio: true })
+              .then(stream => {
+                const mediaRecorder = new MediaRecorder(stream);
+                mediaRecorder.start();
+                const audioChunks = [];
+                mediaRecorder.addEventListener("dataavailable", event => {
+                  audioChunks.push(event.data);
+                });
+                mediaRecorder.addEventListener("stop", () => {
+                  const audioBlob = new Blob(audioChunks, {'type': 'audio/webm'});
+                  const audioUrl = URL.createObjectURL(audioBlob);
+                  const audio = new Audio(audioUrl);
+                  audio.play();
+                  saveAs(audioUrl, "som.webm");
+                });
+
+                setTimeout(() => {
+                  mediaRecorder.stop();
+                  //4 minutos e 33 segundos em milisegundos
+                }, 259800);
+              });
+              </script>
     </body>
 </html>
