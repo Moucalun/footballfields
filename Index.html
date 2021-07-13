@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>4'33" - Apresentação Virtual</title>
+    <meta description="Apresentação virtual da composição 4'33, por John Cage." />
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="image_src" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <style>
+        body {
+            font-family: "Inter", sans-serif
+        }
+    </style>
+    <script src="lib/FileSaver.js"></script>
+</head>
+
+<body id="body">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="mainDiv">
+        <!-- Título -->
+        <h2 class="w3-wide" style="font-size: 300%;">4'33"</h2>
+
+        <!-- Subtítulo-->
+        <p class="w3-opacity">
+            <i>Composição Original por
+                <a href="https://www.wikiart.org/pt/john-cage" target="”_blank”">John Cage</a>.</i>
+        </p>
+
+        <br /><br /><br />
+
+        <!-- Tempo -->
+        <p>
+            <label id="minutes">00</label><label id="colon">:</label><label id="seconds">00</label> / 04:33
+        </p>
+
+        <!-- Script -->
+        <script src="lib/Script.js"></script>
+
+        <!-- Botão de Reprodução -->
+        <p>
+            <button style="margin: auto; width: 50%; border: 3px solid rgb(19, 84, 170); padding: 10px;" id="button" onclick="rec();">
+                ▶️ Reproduzir
+            </button>
+        </p>
+        <p class="w3-center" id="warning">
+            É necessário que este aparelho possua ou esteja conectado a qualquer
+            dispositivo de captura de áudio.
+        </p>
+
+        <!-- Créditos -->
+        <p style="position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		font-size: xx-small;
+		color: rgb(180, 180, 180);
+		text-align: center;">
+            Por Guilherme Moura Camargo - UFSM/Desenho Industrial - História da Arte
+            II - 2021.1
+        </p>
+    </div>
+</body>
+
+</html>
